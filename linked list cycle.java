@@ -6,7 +6,6 @@ public class Solution {
             slow = slow.next;
             fast = fast.next.next;
             if (slow == fast) {
-                // There's a cycle, find the node where the cycle begins
                 ListNode ptr = head;
                 while (ptr != slow) {
                     ptr = ptr.next;
